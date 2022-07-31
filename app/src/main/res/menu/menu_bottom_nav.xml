@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_house_24"
+        android:title="@string/home_menu"
+        />
+
+    <item
+        android:id="@+id/playFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_music_note_24"
+        android:title="@string/play_menu" />
+
+    <item
+        android:id="@+id/settingFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_setting"
+        android:title="@string/setting_menu" />
+</menu>
