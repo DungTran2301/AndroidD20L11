@@ -1,4 +1,4 @@
-package com.dungtran.androidd20l11.fragment.playFragmentView
+package com.dungtran.androidd20l11.fragment.playTabView
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

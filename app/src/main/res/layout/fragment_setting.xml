@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.SettingFragment">
+    tools:context=".fragment.settingTabView.SettingFragment">
 
     <TextView
         android:id="@+id/tv_your_profile"
@@ -27,7 +27,9 @@
         android:layout_marginTop="45dp"
         android:layout_marginEnd="45dp"
         android:drawablePadding="16dp"
+        android:gravity="center_vertical"
         android:hint="@string/tv_your_name"
+        android:minHeight="36dp"
         android:textColorHint="#00838F"
         android:textSize="16sp"
         app:drawableLeftCompat="@drawable/ic_round_person_24" />
@@ -41,7 +43,9 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="45dp"
         android:drawablePadding="16dp"
+        android:gravity="center_vertical"
         android:hint="@string/tv_your_phone"
+        android:minHeight="36dp"
         android:textColorHint="#00838F"
         android:textSize="16sp"
         app:drawableLeftCompat="@drawable/ic_round_call_24" />
@@ -55,7 +59,9 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="45dp"
         android:drawablePadding="16dp"
+        android:gravity="center_vertical"
         android:hint="@string/tv_your_email"
+        android:minHeight="36dp"
         android:textColorHint="#00838F"
         android:textSize="16sp"
         app:drawableLeftCompat="@drawable/ic_round_email_24" />
