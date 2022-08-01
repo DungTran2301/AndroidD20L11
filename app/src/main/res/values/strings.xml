@@ -6,4 +6,7 @@
     <string name="your_profile_string">Your Profile</string>
     <string name="btn_edit_string">Edit</string>
     <string name="btn_save_string">Save</string>
+    <string name="your_name_string">Your Name</string>
+    <string name="phone_number_string">Phone Number</string>
+    <string name="email_string">Email</string>
 </resources>
