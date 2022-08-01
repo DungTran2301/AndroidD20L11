@@ -30,23 +30,7 @@ class EditProfileFragment : Fragment() {
 
     private fun setOnClick() {
         binding.btnSave.setOnClickListener {
-            val bundle = Bundle()
-            val newUser = User(
-                binding.edtYourName.text.toString(),
-                binding.edtYourPhoneNumber.text.toString(),
-                binding.edtYourEmail.text.toString()
-            )
-
-            bundle.putSerializable(
-                "user",
-                newUser
-            )
-
-            (activity as MainActivity).updateUser(newUser)
-
-            setFragmentResult("result_for_setting_fragment", bundle)
-
-            findNavController().navigate(R.id.action_editProfileFragment_to_settingFragment)
+            clickSaveButton()
         }
     }
 
@@ -56,5 +40,25 @@ class EditProfileFragment : Fragment() {
         binding.edtYourName.setText(bundle.name)
         binding.edtYourPhoneNumber.setText(bundle.phoneNumber)
         binding.edtYourEmail.setText(bundle.gmail)
+    }
+
+    private fun clickSaveButton() {
+        val bundle = Bundle()
+        val newUser = User(
+            binding.edtYourName.text.toString(),
+            binding.edtYourPhoneNumber.text.toString(),
+            binding.edtYourEmail.text.toString()
+        )
+
+        bundle.putSerializable(
+            "user",
+            newUser
+        )
+
+        (activity as MainActivity).updateUser(newUser)
+
+        setFragmentResult("result_for_setting_fragment", bundle)
+
+        findNavController().navigate(R.id.action_editProfileFragment_to_settingFragment)
     }
 }

@@ -41,20 +41,24 @@ class SettingFragment : Fragment() {
 
     private fun setOnClick() {
         binding.btnEdit.setOnClickListener {
-            val bundle = Bundle()
-            bundle.putSerializable(
-                "data_user",
-                User(
-                    binding.tvYourName.text.toString(),
-                    binding.tvYourPhoneNumber.text.toString(),
-                    binding.tvYourEmail.text.toString()
-                )
-            )
-
-            findNavController().navigate(
-                R.id.action_settingFragment_to_editProfileFragment,
-                bundle
-            )
+            clickEditButton()
         }
+    }
+
+    private fun clickEditButton() {
+        val bundle = Bundle()
+        bundle.putSerializable(
+            "data_user",
+            User(
+                binding.tvYourName.text.toString(),
+                binding.tvYourPhoneNumber.text.toString(),
+                binding.tvYourEmail.text.toString()
+            )
+        )
+
+        findNavController().navigate(
+            R.id.action_settingFragment_to_editProfileFragment,
+            bundle
+        )
     }
 }
