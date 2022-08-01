@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.settingTabView.SettingFragment">
+
+    <TextView
+        android:id="@+id/tv_your_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="@string/tv_your_profile"
+        android:textColor="@color/blue_grey"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_your_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_your_profile"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="45dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:hint="@string/tv_your_name"
+        android:minHeight="36dp"
+        android:textColorHint="#00838F"
+        android:textSize="16sp"
+        app:drawableLeftCompat="@drawable/ic_round_person_24" />
+
+    <TextView
+        android:id="@+id/tv_your_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_your_name"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="45dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:hint="@string/tv_your_phone"
+        android:minHeight="36dp"
+        android:textColorHint="#00838F"
+        android:textSize="16sp"
+        app:drawableLeftCompat="@drawable/ic_round_call_24" />
+
+    <TextView
+        android:id="@+id/tv_your_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_your_phone_number"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="45dp"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:hint="@string/tv_your_email"
+        android:minHeight="36dp"
+        android:textColorHint="#00838F"
+        android:textSize="16sp"
+        app:drawableLeftCompat="@drawable/ic_round_email_24" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_edit"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/tv_your_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/btn_edit"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
