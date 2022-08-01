@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dungtran.androidd20l11.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.dungtran.androidd20l11.PlayFragment"
+        android:label="Play"
+        tools:layout="@layout/fragment_play" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.dungtran.androidd20l11.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/navigateToEditProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <argument
+            android:name="profile"
+            app:argType="com.dungtran.androidd20l11.User"
+            app:nullable="true"
+            android:defaultValue="@null"/>
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.dungtran.androidd20l11.EditProfileFragment"
+        android:label="Edit profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/navigateToSettingFragment"
+            app:destination="@id/settingFragment"
+            >
+        </action>
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.dungtran.androidd20l11.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" />
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.dungtran.androidd20l11.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+</navigation>
