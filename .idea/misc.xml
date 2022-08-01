@@ -3,8 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/ic_music.xml" value="0.1" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/toolbar_background.xml" value="0.1" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/layout/activity_main.xml" value="0.18981481481481483" />
+        <entry key="..\:/AndroidD20L11/app/src/main/res/menu/menu.xml" value="0.19895833333333332" />
       </map>
     </option>
   </component>
