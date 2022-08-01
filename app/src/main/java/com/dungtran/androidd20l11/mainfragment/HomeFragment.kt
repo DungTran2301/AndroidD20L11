@@ -16,12 +16,12 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding = FragmentHomeBinding.inflate(inflater, container, false)
-        binding.tvPlay.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_homeFragment_to_playFragment)
-        }
-        binding.tvSetting.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_homeFragment_to_settingFragment)
-        }
+//        binding.tvPlay.setOnClickListener { view ->
+//            view.findNavController().navigate(R.id.action_homeFragment_to_playFragment)
+//        }
+//        binding.tvSetting.setOnClickListener { view ->
+//            view.findNavController().navigate(R.id.action_homeFragment_to_settingFragment)
+//        }
         return binding.root
     }
 }

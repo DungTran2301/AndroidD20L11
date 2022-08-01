@@ -7,45 +7,24 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.dungtran.androidd20l11.mainfragment.HomeFragment"
-        android:label="HomeFragment">
-        <action
-            android:id="@+id/action_homeFragment_to_playFragment"
-            app:destination="@id/playFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_settingFragment"
-            app:destination="@id/settingFragment" />
-    </fragment>
+        android:label="HomeFragment" />
     <fragment
         android:id="@+id/playFragment"
         android:name="com.dungtran.androidd20l11.mainfragment.PlayFragment"
-        android:label="PlayFragment"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph">
-        <action
-            android:id="@+id/action_playFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_playFragment_to_settingFragment"
-            app:destination="@id/settingFragment" />
-    </fragment>
+        android:label="PlayFragment" />
     <fragment
         android:id="@+id/settingFragment"
         android:name="com.dungtran.androidd20l11.mainfragment.SettingFragment"
-        android:label="SettingFragment" >
-        <action
-            android:id="@+id/action_settingFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_settingFragment_to_playFragment"
-            app:destination="@id/playFragment" />
+        android:label="SettingFragment">
         <action
             android:id="@+id/action_settingFragment_to_editProfileFragment"
             app:destination="@id/editProfileFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/editProfileFragment"
         android:name="com.dungtran.androidd20l11.mainfragment.EditProfileFragment"
-        android:label="EditProfileFragment" >
+        android:label="EditProfileFragment">
         <action
             android:id="@+id/action_editProfileFragment_to_settingFragment"
             app:destination="@id/settingFragment" />

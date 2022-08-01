@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import androidx.navigation.fragment.findNavController
 import com.dungtran.androidd20l11.R
 import com.dungtran.androidd20l11.databinding.FragmentEditProfileBinding
 
@@ -21,8 +22,10 @@ class EditProfileFragment : Fragment() {
             bundle.putString("name", binding.etYourName.text.toString())
             bundle.putString("email", binding.etYourEmail.text.toString())
             bundle.putString("phone", binding.etYourPhoneNumber.text.toString())
-            view.findNavController().navigate(R.id.action_editProfileFragment_to_settingFragment, bundle)
+            view.findNavController()
+                .navigate(R.id.action_editProfileFragment_to_settingFragment, bundle)
         }
+      //  findNavController().
 
         return binding.root
     }

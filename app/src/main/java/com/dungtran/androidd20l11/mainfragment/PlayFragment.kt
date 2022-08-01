@@ -19,12 +19,12 @@ class PlayFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding = FragmentPlayBinding.inflate(inflater, container, false)
-        binding.tvHome.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_playFragment_to_homeFragment)
-        }
-        binding.tvSetting.setOnClickListener { view ->
-            view.findNavController().navigate(R.id.action_playFragment_to_settingFragment)
-        }
+//        binding.tvHome.setOnClickListener { view ->
+//            view.findNavController().navigate(R.id.action_playFragment_to_homeFragment)
+//        }
+//        binding.tvSetting.setOnClickListener { view ->
+//            view.findNavController().navigate(R.id.action_playFragment_to_settingFragment)
+//        }
 
         val viewPager = binding.pager
         val tabLayout = binding.tabLayout
