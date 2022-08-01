@@ -12,7 +12,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/toolbar_background"/>
+        android:background="@drawable/toolbar_background"
+        android:textAlignment="textStart"
+        app:titleTextColor="@color/white" />
 
     <FrameLayout
         android:id="@+id/frame_container"
