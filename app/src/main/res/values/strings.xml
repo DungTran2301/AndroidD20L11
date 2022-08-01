@@ -3,4 +3,7 @@
     <string name="home_menu">home</string>
     <string name="play_menu">play</string>
     <string name="setting_menu">setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
 </resources>
