@@ -11,7 +11,7 @@
 ## (Sau khi nhấn Edit ở SettingFragment sẽ thực hiện việc điều hướng thông qua Navigation Controller, khi navigate sẽ gửi kèm 1 bundle gán cho argument ở EditFragment)
 
 # EditFragment (Nơi sửa thông tin người dùng)
-![image](https://user-images.githubusercontent.com/84552830/182118191-e153c5d3-b816-4c92-8d8b-0e081c5579c7.png)
+![image](https://user-images.githubusercontent.com/84552830/182119348-c8ffd911-d48f-41af-b4e1-43a3b7c6bf4a.png)
 
 ## Sau khi nhấn nút Save, thông tin người dùng sẽ được lưu lại, đồng thời setFragmentResult(Bundle(chứa dữ liệu mới)) để trả dữ liệu về cho listener ở SettingFragment, cuối cùng sẽ điều hướng ngược trở lại SettingFragment thông qua Navigation Controller.
 ![image](https://user-images.githubusercontent.com/84552830/182119019-46280661-2605-4ae6-879f-ba5da48f305f.png)
