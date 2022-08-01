@@ -7,36 +7,18 @@
     tools:context=".TabSettingFragment">
 
     <Space
-        android:id="@+id/space1"
+        android:id="@+id/space2"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvprofile"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Your profile"
-        android:textSize="30sp"
-        app:layout_constraintTop_toBottomOf="@+id/space1"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <Space
-        android:id="@+id/space2"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvprofile" />
-
-    <TextView
-        android:id="@+id/tvname"
+    <EditText
+        android:id="@+id/edtname"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:text="Your name"
+        android:hint="Your name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space2" />
@@ -48,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvname" />
+        app:layout_constraintTop_toBottomOf="@+id/edtname" />
 
     <Space
         android:id="@+id/space4"
@@ -56,23 +38,23 @@
         android:layout_height="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvphonenumber" />
+        app:layout_constraintTop_toBottomOf="@+id/edtphonenumber" />
 
-    <TextView
-        android:id="@+id/tvphonenumber"
+    <EditText
+        android:id="@+id/edtphonenumber"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:text="Your phone number"
+        android:hint="Your phone number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space3" />
 
-    <TextView
-        android:id="@+id/tvemail"
+    <EditText
+        android:id="@+id/edtemail"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:text="Your email"
+        android:hint="Your email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space4" />
@@ -83,13 +65,13 @@
         android:layout_height="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvemail" />
+        app:layout_constraintTop_toBottomOf="@+id/edtemail" />
 
     <Button
-        android:id="@+id/btedit"
+        android:id="@+id/btsave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit"
+        android:text="Save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space5" />

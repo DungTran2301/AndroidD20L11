@@ -1,5 +1,6 @@
 package com.dungtran.androidd20l11
 
+import User
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -11,7 +12,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-    lateinit var navController: NavController
+    private var user = User()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -19,6 +20,11 @@ class MainActivity : AppCompatActivity() {
         val tabHomeFragment = TabHomeFragment()
         val tabPlayFragment = TabPlayFragment()
         val tabSettingFragment = TabSettingFragment()
+
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flfragmentContent, tabHomeFragment)
+            commit()
+        }
 
         val BottomNavigationView = findViewById<BottomNavigationView>(R.id.bnTab)
         BottomNavigationView.setOnNavigationItemSelectedListener { item ->
@@ -51,5 +57,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
+    fun updateUser(newUser: User) {
+        user = newUser
+    }
 }
