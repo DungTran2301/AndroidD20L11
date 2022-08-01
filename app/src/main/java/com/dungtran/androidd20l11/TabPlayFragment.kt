@@ -10,8 +10,8 @@ import com.google.android.material.tabs.TabLayoutMediator
 class TabPlayFragment : Fragment(R.layout.fragment_tab_play) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val tabLayout = getView()?.findViewById<TabLayout>(R.id.tabLayout)
-        val viewPager2 = getView()?.findViewById<ViewPager2>(R.id.viewPager2)
+        val tabLayout = view.findViewById<TabLayout>(R.id.tabLayout)
+        val viewPager2 = view.findViewById<ViewPager2>(R.id.viewPager2)
         val adapter = ViewPaperAdapter(childFragmentManager, lifecycle)
         viewPager2?.adapter = adapter
         tabLayout?.let {

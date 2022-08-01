@@ -6,13 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/wdgtoolbar"
+    <TextView
+        android:id="@+id/tvtoolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/black"
-        app:layout_constraintTop_toTopOf="parent"
-        app:titleTextColor="@color/white" />
+        android:text="   Home"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/flfragmentContent"
@@ -20,7 +22,7 @@
         android:layout_height="0dp"
         app:defaultNavHost="true"
         app:layout_constraintBottom_toTopOf="@+id/bnTab"
-        app:layout_constraintTop_toBottomOf="@+id/wdgtoolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/tvtoolbar" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnTab"
