@@ -7,10 +7,12 @@
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/drawable/icon_home.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/drawable/icon_music.xml" value="0.1" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/drawable/icon_setting.xml" value="0.1" />
-        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/fragment_favorite2.xml" value="0.1796875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/fragment_tab_home.xml" value="0.1796875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/fragment_tab_play.xml" value="0.1796875" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/fragment_tab_setting.xml" value="0.22" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/fragment_your_music2.xml" value="0.165625" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/menu.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/tab_home_fragment.xml" value="0.17864583333333334" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/AndroidD20L11/app/src/main/res/layout/tab_play_fragment.xml" value="0.17864583333333334" />
