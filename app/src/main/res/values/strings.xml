@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">AndroidD20L11</string>
+    <string name="home">Home</string>
+    <string name="play">Play</string>
+    <string name="favorite">Favorite</string>
+    <string name="your_music">Your music</string>
+    <string name="setting">Setting</string>
+    <string name="homeAcc">Home</string>
+    <string name="your_profile">Your profile</string>
+    <string name="your_name">Your name</string>
+    <string name="your_phone_number">Your phone number</string>
+    <string name="your_email">Your email</string>
+    <string name="edit">Edit</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="save">Save</string>
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
