@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-
     private fun stuff() {
         window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_FULLSCREEN
     }

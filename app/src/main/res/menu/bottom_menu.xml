@@ -3,14 +3,14 @@
 
     <item
         android:id="@+id/homeFragment"
-        android:title="@string/home"
-        android:icon="@drawable/ic_baseline_home_24"/>
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home" />
     <item
         android:id="@+id/playFragment"
-        android:title="@string/play"
-        android:icon="@drawable/ic_baseline_music_note_24"/>
+        android:icon="@drawable/ic_baseline_music_note_24"
+        android:title="@string/play" />
     <item
         android:id="@+id/settingFragment"
-        android:title="@string/setting"
-        android:icon="@drawable/ic_baseline_settings_24"/>
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/setting" />
 </menu>

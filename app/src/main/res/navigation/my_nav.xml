@@ -19,26 +19,24 @@
         android:id="@+id/settingFragment"
         android:name="com.dungtran.androidd20l11.SettingFragment"
         android:label="Setting"
-        tools:layout="@layout/fragment_setting" >
+        tools:layout="@layout/fragment_setting">
         <action
             android:id="@+id/navigateToEditProfileFragment"
             app:destination="@id/editProfileFragment" />
         <argument
             android:name="profile"
+            android:defaultValue="@null"
             app:argType="com.dungtran.androidd20l11.User"
-            app:nullable="true"
-            android:defaultValue="@null"/>
+            app:nullable="true" />
     </fragment>
     <fragment
         android:id="@+id/editProfileFragment"
         android:name="com.dungtran.androidd20l11.EditProfileFragment"
         android:label="Edit profile"
-        tools:layout="@layout/fragment_edit_profile" >
+        tools:layout="@layout/fragment_edit_profile">
         <action
             android:id="@+id/navigateToSettingFragment"
-            app:destination="@id/settingFragment"
-            >
-        </action>
+            app:destination="@id/settingFragment"></action>
 
 
     </fragment>

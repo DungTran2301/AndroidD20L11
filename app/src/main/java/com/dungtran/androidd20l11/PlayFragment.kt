@@ -27,7 +27,7 @@ class PlayFragment : Fragment() {
     private fun tabLayoutSetup() {
         if (binding.viewPager2.adapter == null)
             binding.viewPager2.adapter = Adapter(
-                parentFragmentManager, lifecycle
+                childFragmentManager, lifecycle
             )
         TabLayoutMediator(binding.tabLayout, binding.viewPager2)
         { tab, position ->

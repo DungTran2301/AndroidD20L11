@@ -5,7 +5,12 @@
       <map>
         <entry key="..\:/AndroidD20L11/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.127" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/bottom_nav_color.xml" value="0.126" />
+        <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.127" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.146" />
+        <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/ic_baseline_music_note_24.xml" value="0.127" />
+        <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.127" />
+        <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.127" />
+        <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/ic_launcher_background.xml" value="0.127" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/layout/fragment_edit_profile.xml" value="0.259375" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/layout/fragment_favourite.xml" value="0.259375" />
