@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dungtran.androidd20l11.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.dungtran.androidd20l11.PlayFragment"
+        android:label="play_fragment"
+        tools:layout="@layout/play_fragment" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.dungtran.androidd20l11.SettingFragment"
+        android:label="setting_fragment"
+        tools:layout="@layout/setting_fragment" >
+        <action
+            android:id="@+id/action_settingFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.dungtran.androidd20l11.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.dungtran.androidd20l11.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.dungtran.androidd20l11.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" />
+</navigation>
