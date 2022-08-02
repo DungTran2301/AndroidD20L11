@@ -17,8 +17,14 @@ class SettingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
        binding = FragmentSettingBinding.inflate(inflater,container,false)
-
+        setData(User("Jessica","0981234567","jessica098@gmail.com"))
         return binding.root
+    }
+
+    private fun setData(user: User) {
+        binding.userName.text = user.userName
+        binding.phoneNum.text = user.phoneNum
+        binding.email.text = user.email
     }
 
 

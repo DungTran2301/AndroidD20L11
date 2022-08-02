@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".SettingFragment">
+    tools:context=".EditProfileFragment">
 
     <TextView
         android:id="@+id/myProfile"
@@ -14,11 +14,11 @@
         android:gravity="center"
         android:textColor="@color/black"
         android:textSize="36sp"
-        android:text="@string/my_profile"
+        android:text="@string/edit_profile"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="60dp"/>
 
-    <TextView
+    <EditText
         android:id="@+id/userName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -30,9 +30,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:drawableStartCompat="@drawable/ic_person" />
+        app:drawableStartCompat="@drawable/ic_person"
+        android:autofillHints="username"
+        android:hint="@string/user_name"
+        android:inputType="text" />
 
-    <TextView
+    <EditText
         android:id="@+id/phoneNum"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -44,8 +47,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userName"
-        app:drawableStartCompat="@drawable/ic_phone" />
-    <TextView
+        app:drawableStartCompat="@drawable/ic_phone"
+        android:autofillHints="phone"
+        android:hint="@string/phone_number"
+        android:inputType="phone" />
+    <EditText
         android:id="@+id/email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -57,10 +63,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/phoneNum"
-        app:drawableStartCompat="@drawable/ic_email" />
+        app:drawableStartCompat="@drawable/ic_email"
+        android:autofillHints="emailAddress"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress" />
 
     <Button
-        android:id="@+id/edtProfile"
+        android:id="@+id/edtSaveProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
@@ -69,7 +78,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="64dp"
         android:enabled="true"
-        android:text="@string/edit_profile"
+        android:text="@string/save_profile"
         android:textColor="@color/white"
         android:backgroundTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
