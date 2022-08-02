@@ -7,23 +7,23 @@
     tools:context=".MusicFragment">
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayoutMusic"
-        app:tabBackground="@drawable/toolbar_background"
-        app:tabIndicatorColor="@color/teal_200"
-        app:tabSelectedTextColor="@color/purple_700"
+        app:tabBackground="@color/black"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/viewPagerMusic"
-        app:layout_constraintTop_toBottomOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPagerMusic"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tabLayoutMusic" />
+        app:layout_constraintBottom_toTopOf="@id/tabLayoutMusic"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
