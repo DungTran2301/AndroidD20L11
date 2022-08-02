@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dungtran.androidd20l11.fragment.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.dungtran.androidd20l11.fragment.playTabView.PlayFragment"
+        android:label="Play"
+        tools:layout="@layout/fragment_play" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.dungtran.androidd20l11.fragment.settingTabView.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting">
+        <action
+            android:id="@+id/action_settingFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.dungtran.androidd20l11.fragment.settingTabView.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile">
+
+        <action
+            android:id="@+id/action_editProfileFragment_to_settingFragment"
+            app:destination="@id/settingFragment"
+            app:popUpTo="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.dungtran.androidd20l11.fragment.playTabView.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/yourMusicFragment"
+        android:name="com.dungtran.androidd20l11.fragment.playTabView.YourMusicFragment"
+        android:label="fragment_your_music"
+        tools:layout="@layout/fragment_your_music" />
+</navigation>
