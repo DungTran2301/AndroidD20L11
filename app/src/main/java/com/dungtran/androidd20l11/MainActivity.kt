@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpTitle() {
         appBarConfiguration = AppBarConfiguration(navController.graph )
-        findViewById<Toolbar>(R.id.toolBar).setupWithNavController(navController,appBarConfiguration)
+        binding.toolBar.setupWithNavController(navController,appBarConfiguration)
 
     }
 
