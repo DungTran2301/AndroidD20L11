@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             R.id.settingFragment2,
             R.id.editProfileFragment
             ) )
+//        appBarConfiguration = AppBarConfiguration(navController.graph ) cái này có nút back ở toolbar
         binding.toolBar.setupWithNavController(navController,appBarConfiguration)
 
     }
