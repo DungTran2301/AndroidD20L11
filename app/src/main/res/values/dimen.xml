@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fragment_label_text_size">30sp</dimen>
+    <dimen name="user_item_text_size">15sp</dimen>
+    <dimen name="user_item_space">25dp</dimen>
+    <dimen name="large_space">25dp</dimen>
+    <dimen name="user_item_edit_text_width">100dp</dimen>
+</resources>
