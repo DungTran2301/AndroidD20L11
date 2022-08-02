@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|top"
+    android:orientation="vertical"
+    tools:context=".SettingFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_space"
+        android:layout_marginBottom="@dimen/large_space"
+        android:text="Your profile"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/UserTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name"
+            tools:ignore="HardcodedText"
+            app:drawableStartCompat="@drawable/ic_baseline_person_24" />
+
+
+        <TextView
+            android:id="@+id/tv_user_telephone"
+            style="@style/UserTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="012345678"
+            app:drawableStartCompat="@drawable/ic_baseline_phone_24"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_user_email"
+            style="@style/UserTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yourname@email.com"
+            app:drawableStartCompat="@drawable/ic_baseline_email_24"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/bt_edit_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:layout_marginTop="@dimen/user_item_space"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>
