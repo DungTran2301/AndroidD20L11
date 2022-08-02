@@ -4,12 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/ic_music.xml" value="0.1" />
+        <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/ic_person.xml" value="0.189" />
+        <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/textview_background.xml" value="0.134" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/drawable/toolbar_background.xml" value="0.1" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/layout/fragment_favourite.xml" value="0.2" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/layout/fragment_music.xml" value="0.1" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/layout/fragment_my_music.xml" value="0.1859375" />
+        <entry key="..\:/AndroidD20L11/app/src/main/res/layout/fragment_setting.xml" value="0.22" />
         <entry key="..\:/AndroidD20L11/app/src/main/res/menu/menu.xml" value="0.19895833333333332" />
       </map>
     </option>
