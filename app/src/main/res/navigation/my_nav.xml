@@ -36,7 +36,7 @@
         tools:layout="@layout/fragment_edit_profile">
         <action
             android:id="@+id/navigateToSettingFragment"
-            app:destination="@id/settingFragment"></action>
+            app:destination="@id/settingFragment" />
 
 
     </fragment>

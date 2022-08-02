@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             binding.fragmentContainerView.getFragment<NavHostFragment>().navController
 
         appBarConfiguration =
-            AppBarConfiguration(setOf(R.id.homeFragment, R.id.playFragment, R.id.settingFragment))
+            AppBarConfiguration(setOf(R.id.homeFragment, R.id.playFragment, R.id.settingFragment,R.id.editProfileFragment))
         setupActionBarWithNavController(navController, appBarConfiguration)
 
         hideBottomNavi()
