@@ -25,7 +25,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="126dp"
         android:layout_marginEnd="24dp"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,7 +39,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -52,7 +52,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
-        android:textSize="16sp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +60,7 @@
         app:drawableStartCompat="@drawable/ic_email" />
 
     <Button
-        android:id="@+id/edtProfile"
+        android:id="@+id/btnProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="start"
