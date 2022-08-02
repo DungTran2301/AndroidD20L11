@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditFragment">
+
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:hint="Your name"/>
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="5dp"
+        android:hint="Phone number" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@id/etPhone"
+        android:layout_marginTop="5dp"
+        android:hint="Email"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:background="#36393f"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etEmail"
+        android:layout_marginTop="30dp"/>
+
+</RelativeLayout>
