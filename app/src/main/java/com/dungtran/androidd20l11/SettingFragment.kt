@@ -19,8 +19,8 @@ class SettingFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
        binding = FragmentSettingBinding.inflate(inflater,container,false)
-        getData()
         setData(user)
+        getData()
         binding.btnProfile.setOnClickListener {
             clickOn()
         }
@@ -29,7 +29,11 @@ class SettingFragment : Fragment() {
 
     private fun getData() {
         setFragmentResultListener("dataUser"){_,bundle->
-            user = bundle.getSerializable("user") as User
+            val result = bundle.getSerializable("user") as User
+            if(result.userName.isEmpty()|| result.phoneNum.isEmpty()|| result.email.isEmpty()){
+                setData(user)
+            }
+            else setData(result)
 
         }
     }
