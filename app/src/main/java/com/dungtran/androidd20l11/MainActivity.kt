@@ -1,30 +1,43 @@
 package com.dungtran.androidd20l11
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentTransaction
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
+import com.dungtran.androidd20l11.databinding.ActivityMainBinding
+import androidx.appcompat.widget.Toolbar
 
 class MainActivity : AppCompatActivity() {
-    private var fragmentManager: FragmentManager? = null
-    private var fragmentTransaction: FragmentTransaction? = null
+    private lateinit var navController: NavController
+    private lateinit var hostFragment: NavHostFragment
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var toolbar: Toolbar
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        addFragment()
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setUpNavController()
+        setUpBottomNavigation()
+        setUpTitle()
 
+    }
+
+    private fun setUpTitle() {
+        toolbar = findViewById<View>(R.id.toolBar) as Toolbar
+        setSupportActionBar(toolbar)
 
     }
 
-    private fun addFragment() {
-        fragmentManager = supportFragmentManager
-        fragmentTransaction = fragmentManager?.beginTransaction()
-        fragmentTransaction?.add(
-            R.id.frameContainer,
-            HomeFragment()
-        )
-        fragmentTransaction?.commit()
-
-
+    private fun setUpBottomNavigation() {
+        binding.bottomNavigation.setupWithNavController(navController)
     }
+
+    private fun setUpNavController() {
+        hostFragment = supportFragmentManager.findFragmentById(R.id.frameContainer) as NavHostFragment
+        navController = hostFragment.navController
+    }
+
+
 }

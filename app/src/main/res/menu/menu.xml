@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/homeFragment"
+        android:id="@+id/homeFragment2"
         android:enabled="true"
         android:icon="@drawable/ic_home"
         android:title="@string/home_menu"
         />
 
     <item
-        android:id="@+id/playFragment"
+        android:id="@+id/musicFragment2"
         android:enabled="true"
         android:icon="@drawable/ic_music"
         android:title="@string/play_menu" />

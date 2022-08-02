@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MusicFragment">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutMusic"
+        app:tabBackground="@drawable/toolbar_background"
+        app:tabIndicatorColor="@color/teal_200"
+        app:tabSelectedTextColor="@color/purple_700"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/viewPagerMusic"
+        app:layout_constraintTop_toBottomOf="parent"/>
 
-    <TextView
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerMusic"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/favourite"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        android:gravity="center"/>
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayoutMusic" />
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

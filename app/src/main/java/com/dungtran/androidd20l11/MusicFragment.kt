@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.dungtran.androidd20l11.databinding.FragmentMusicBinding
+import com.google.android.material.tabs.TabLayoutMediator
 
 class MusicFragment : Fragment() {
 
@@ -19,5 +20,20 @@ class MusicFragment : Fragment() {
         return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setUpTabLayout()
+    }
+
+    private fun setUpTabLayout() {
+        binding.viewPagerMusic.adapter = TabLayoutAdapter(childFragmentManager,lifecycle)
+        TabLayoutMediator(binding.tabLayoutMusic,binding.viewPagerMusic){ tab, position ->
+            when(position){
+                0 -> tab.text = "Favourite"
+                else -> tab.text = "My Music"
+            }
+
+        }.attach()
+    }
 
 }

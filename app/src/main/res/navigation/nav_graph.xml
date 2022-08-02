@@ -18,5 +18,22 @@
         android:id="@+id/musicFragment2"
         android:name="com.dungtran.androidd20l11.MusicFragment"
         android:label="fragment_music"
-        tools:layout="@layout/fragment_music" />
+        tools:layout="@layout/fragment_music" >
+        <action
+            android:id="@+id/action_musicFragment2_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <action
+            android:id="@+id/action_musicFragment2_to_myMusicFragment"
+            app:destination="@id/myMusicFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.dungtran.androidd20l11.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/myMusicFragment"
+        android:name="com.dungtran.androidd20l11.MyMusicFragment"
+        android:label="fragment_my_music"
+        tools:layout="@layout/fragment_my_music" />
 </navigation>
