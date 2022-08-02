@@ -1,19 +1,19 @@
 package com.dungtran.androidd20l11
 
 import android.os.Bundle
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
 import com.dungtran.androidd20l11.databinding.ActivityMainBinding
-import androidx.appcompat.widget.Toolbar
 
 class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var hostFragment: NavHostFragment
     private lateinit var binding: ActivityMainBinding
-    private lateinit var toolbar: Toolbar
+    private lateinit var appBarConfiguration: AppBarConfiguration
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpTitle() {
-        toolbar = findViewById<View>(R.id.toolBar) as Toolbar
-        setSupportActionBar(toolbar)
+        appBarConfiguration = AppBarConfiguration(navController.graph )
+        findViewById<Toolbar>(R.id.toolBar).setupWithNavController(navController,appBarConfiguration)
 
     }
 

@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/homeFragment2"
         android:name="com.dungtran.androidd20l11.HomeFragment"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment2_to_musicFragment2"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/musicFragment2"
         android:name="com.dungtran.androidd20l11.MusicFragment"
-        android:label="fragment_music"
+        android:label="Music"
         tools:layout="@layout/fragment_music" >
     </fragment>
     <fragment

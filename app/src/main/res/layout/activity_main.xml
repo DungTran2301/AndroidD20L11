@@ -14,9 +14,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintTop_toBottomOf="@id/frameContainer"
         android:background="@drawable/toolbar_background"
-        android:textAlignment="textStart"
-        app:titleTextColor="@color/white"
-        app:title="Home" />
+        app:titleTextColor="@color/white" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/frameContainer"
