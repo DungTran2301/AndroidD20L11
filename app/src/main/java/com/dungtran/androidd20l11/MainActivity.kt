@@ -24,7 +24,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUpTitle() {
-        appBarConfiguration = AppBarConfiguration(navController.graph )
+        appBarConfiguration = AppBarConfiguration(setOf(R.id.homeFragment2,
+            R.id.musicFragment2,
+            R.id.settingFragment2,
+            R.id.editProfileFragment
+            ) )
         binding.toolBar.setupWithNavController(navController,appBarConfiguration)
 
     }
