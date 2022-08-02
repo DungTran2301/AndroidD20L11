@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     //private lateinit var hostFragment: NavHostFragment
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
-
+    private var user = User("Vũ Nguyễn Cường","0967232097","abcxyz@gmail.com")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -38,7 +38,8 @@ class MainActivity : AppCompatActivity() {
             setOf(
                 R.id.homeFragment,
                 R.id.playFragment,
-                R.id.settingFragment
+                R.id.settingFragment,
+                R.id.editFragment
             )
         )
         setupActionBarWithNavController(navController,appBarConfiguration)
@@ -46,6 +47,10 @@ class MainActivity : AppCompatActivity() {
         binding.bottomNav.setupWithNavController(navController)
     }
 
+    fun updateUser(newUser:User){
+        user = newUser
+    }
 
+    fun getUser():User = user
 
 }

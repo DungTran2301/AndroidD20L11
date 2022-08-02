@@ -40,6 +40,9 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnSave"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:background="#36393f"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"

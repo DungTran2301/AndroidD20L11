@@ -8,18 +8,18 @@
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.dungtran.androidd20l11.HomeFragment"
-        android:label="home_fragment"
-        tools:layout="@layout/home_fragment" />
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/playFragment"
         android:name="com.dungtran.androidd20l11.PlayFragment"
-        android:label="play_fragment"
-        tools:layout="@layout/play_fragment" />
+        android:label="Play"
+        tools:layout="@layout/fragment_play" />
     <fragment
         android:id="@+id/settingFragment"
         android:name="com.dungtran.androidd20l11.SettingFragment"
-        android:label="setting_fragment"
-        tools:layout="@layout/setting_fragment" >
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" >
         <action
             android:id="@+id/action_settingFragment_to_editFragment"
             app:destination="@id/editFragment" />
@@ -27,7 +27,7 @@
     <fragment
         android:id="@+id/editFragment"
         android:name="com.dungtran.androidd20l11.EditFragment"
-        android:label="fragment_edit"
+        android:label="Edit"
         tools:layout="@layout/fragment_edit" >
         <action
             android:id="@+id/action_editFragment_to_settingFragment"
@@ -36,11 +36,11 @@
     <fragment
         android:id="@+id/favoriteFragment"
         android:name="com.dungtran.androidd20l11.FavoriteFragment"
-        android:label="fragment_favorite"
+        android:label="Favorite"
         tools:layout="@layout/fragment_favorite" />
     <fragment
         android:id="@+id/musicFragment"
         android:name="com.dungtran.androidd20l11.MusicFragment"
-        android:label="fragment_music"
+        android:label="Music"
         tools:layout="@layout/fragment_music" />
 </navigation>
