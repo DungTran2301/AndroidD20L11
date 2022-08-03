@@ -10,7 +10,7 @@
         android:id="@+id/tvYourMusicFragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your Music"
+        android:text="@string/your_music"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

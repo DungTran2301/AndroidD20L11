@@ -3,6 +3,7 @@ package com.dungtran.androidd20l11
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.dungtran.androidd20l11.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -21,38 +22,29 @@ class MainActivity : AppCompatActivity() {
             replace(R.id.flfragmentContent, tabHomeFragment)
             commit()
         }
-        val BottomNavigationView = findViewById<BottomNavigationView>(R.id.bnTab)
-        BottomNavigationView.setOnNavigationItemSelectedListener { item ->
+        val bnTab = findViewById<BottomNavigationView>(R.id.bnTab)
+        bnTab.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.homeFragment -> {
-                    binding.tvtoolbar.setText("   Home")
-                    supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.flfragmentContent, tabHomeFragment)
-                        addToBackStack(null)
-                        commit()
-                    }
+                    replaceFragmentBottomNavigation(tabHomeFragment)
                     true
                 }
                 R.id.playFragment -> {
-                    binding.tvtoolbar.setText("   Play")
-                    supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.flfragmentContent, tabPlayFragment)
-                        addToBackStack(null)
-                        commit()
-                    }
+                    replaceFragmentBottomNavigation(tabPlayFragment)
                     true
                 }
-                R.id.settingFragment -> {
-                    binding.tvtoolbar.setText("   Setting")
-                    supportFragmentManager.beginTransaction().apply {
-                        replace(R.id.flfragmentContent, tabSettingFragment)
-                        addToBackStack(null)
-                        commit()
-                    }
+                else -> {
+                    replaceFragmentBottomNavigation(tabSettingFragment)
                     true
                 }
-                else -> false
             }
+        }
+    }
+    fun replaceFragmentBottomNavigation(tabFragment: Fragment){
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flfragmentContent, tabFragment)
+            addToBackStack(null)
+            commit()
         }
     }
 }

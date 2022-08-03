@@ -6,19 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".TabSettingFragment">
 
+    <Toolbar
+        android:id="@+id/tbEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_profile"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </Toolbar>
+
     <Space
         android:id="@+id/space2"
         android:layout_width="wrap_content"
         android:layout_height="70dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/tbEditProfile" />
 
     <EditText
         android:id="@+id/edtname"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:hint="Your name"
+        android:hint="@string/your_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space2" />
@@ -44,7 +61,7 @@
         android:id="@+id/edtphonenumber"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:hint="Your phone number"
+        android:hint="@string/your_phone_number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +71,7 @@
         android:id="@+id/edtemail"
         android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:hint="Your email"
+        android:hint="@string/your_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space4" />
@@ -71,7 +88,7 @@
         android:id="@+id/btsave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
+        android:text="@string/save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/space5" />
