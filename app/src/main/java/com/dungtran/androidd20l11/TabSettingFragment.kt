@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.setFragmentResultListener
+import com.dungtran.androidd20l11.databinding.FragmentTabSettingBinding
 
 class TabSettingFragment : Fragment(R.layout.fragment_tab_setting) {
 
@@ -34,7 +35,7 @@ class TabSettingFragment : Fragment(R.layout.fragment_tab_setting) {
         super.onViewCreated(view, savedInstanceState)
         val btedit = view.findViewById<Button>(R.id.btedit)
         btedit?.setOnClickListener {
-            fragmentManager?.beginTransaction()?.apply {
+            parentFragmentManager.beginTransaction().apply {
                 replace(R.id.flfragmentContent, EditProfileFragment())
                 addToBackStack(null)
                 commit()
