@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.dungtran.androidd20l11.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_musicFragment2"
+            app:destination="@id/musicFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_settingFragment2"
+            app:destination="@id/settingFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/musicFragment2"
+        android:name="com.dungtran.androidd20l11.MusicFragment"
+        android:label="Music"
+        tools:layout="@layout/fragment_music" >
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.dungtran.androidd20l11.FavouriteFragment"
+        android:label="fragment_favourite"
+        tools:layout="@layout/fragment_favourite" />
+    <fragment
+        android:id="@+id/myMusicFragment"
+        android:name="com.dungtran.androidd20l11.MyMusicFragment"
+        android:label="fragment_my_music"
+        tools:layout="@layout/fragment_my_music" />
+    <fragment
+        android:id="@+id/settingFragment2"
+        android:name="com.dungtran.androidd20l11.SettingFragment"
+        android:label="Setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment2_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.dungtran.androidd20l11.EditProfileFragment"
+        android:label="Edit Profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_settingFragment2"
+            app:destination="@id/settingFragment2" />
+    </fragment>
+</navigation>
