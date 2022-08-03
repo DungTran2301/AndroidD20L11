@@ -1,6 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:app="http://schemas.android.com/apk/res-auto"
-             android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
 
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dungtran.androidd20l11.fragment.HomeFragment"
+        android:label="HomeFragment" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.dungtran.androidd20l11.fragment.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.dungtran.androidd20l11.fragment.EditProfileFragment"
+        android:label="EditProfileFragment" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.dungtran.androidd20l11.fragment.FavoriteFragment"
+        android:label="FavoriteFragment" />
+    <fragment
+        android:id="@+id/yourMusicFragment"
+        android:name="com.dungtran.androidd20l11.fragment.YourMusicFragment"
+        android:label="YourMusicFragment" />
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.dungtran.androidd20l11.fragment.PlayFragment"
+        android:label="PlayFragment" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.dungtran.androidd20l11.fragment.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>
